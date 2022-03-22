@@ -1,0 +1,50 @@
+header {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  color: teal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  font-weight: 540;
+  letter-spacing: 1.5px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 1rem;
+}
+ul li {
+  margin: 0 1rem;
+  list-style: none;
+}
+li a {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: teal;
+  margin: 1rem 0;
+}
+.badge {
+  background-color: teal;
+  color: white;
+
+  padding: 0.05rem 0.2rem;
+  margin-left: 0.2rem;
+  border-radius: 0.5rem;
+}
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    text-align: center;
+  }
+  ul {
+    justify-content: center;
+  }
+}

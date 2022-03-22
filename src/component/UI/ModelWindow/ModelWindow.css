@@ -1,0 +1,71 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  color: black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.hidden {
+  display: none;
+}
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+}
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.contact {
+  text-align: center;
+}
+.title h4 {
+  color: teal;
+}
+.textarea {
+  font: inherit;
+  padding: 0.35rem;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: 1px solid #c1d1d1;
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.textarea:focus {
+  background-color: #cbf8f8;
+  outline-color: teal;
+}
+.textarea.invalid {
+  background-color: #c75f70;
+  outline-color: rgb(202, 96, 96);
+}
+
+.error-text {
+  color: #b40e0e;
+}
+.close-btn {
+  color: teal;
+  font-size: 1.2rem;
+}
